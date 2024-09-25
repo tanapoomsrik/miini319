@@ -1,0 +1,500 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: #000000; /* เปลี่ยนเป็นสีน้ำเงิน (หรือสีที่คุณต้องการ) */
+    position: fixed; /* ทำให้ navbar อยู่ในตำแหน่งสัมพัทธ์ */
+    top: 0; /* กำหนดให้ติดอยู่ที่ด้านบน */
+    width: 100%;
+    z-index: 1000; /* ทำให้ navbar อยู่ด้านบนสุด */
+}
+
+.navbar-toggler {
+    background-color: #000000; /* เปลี่ยนสีพื้นหลังของปุ่ม toggler */
+    border: none; /* ลบเส้นขอบ */
+}
+
+.nav-container {
+    display: flex;  /* ใช้ Flexbox เพื่อจัดเรียงลิงก์ในแนวนอน */
+    gap: 15px;  /* ระยะห่างระหว่างลิงก์ */
+}
+
+
+.navbar-toggler:after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+
+}
+
+
+.nav-link {
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    background-color: rgba(147, 144, 144, 0.2);
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column; /* เปลี่ยนลิงก์เป็นแนวตั้งเมื่อหน้าจอเล็ก */
+        padding: 1px 0; /* เพิ่ม padding เพื่อความสวยงาม */
+        margin-top: 10px; /* เพิ่ม margin ด้านบนเพื่อขยับลิงก์ลงมา */
+        gap: 1px;
+    }
+    .navbar-collapse {
+        background-color: #000000; /* กำหนดสีพื้นหลังให้กับ navbar ที่ขยาย */
+    }
+}
+
+/* เพิ่ม margin ให้กับ nav-container เพื่อขยับลง */
+.nav-container {
+    margin-top: 10px; /* ขยับลง 10px */
+}
+
+/*---------------------------------------- end navebar ---------------------------------------*/
+
+/*--------------------------------------- feature Styling ----------------------------------*/
+.container {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Section Title */
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Card Styling */
+  .col {
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .col:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Icon Styling */
+  .icon-square {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #e3e4e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #3498db;
+  }
+  
+  /* Heading and Text */
+  .fs-2 {
+    color: #000000;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #6c757d;
+    line-height: 1.5;
+  }
+  
+  /* Button Styling */
+  .btn-primary {
+    background-color: #3498db;
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #2980b9;
+    color: #fff;
+  }
+  
+  /*--------------------------------------- feature Styling ----------------------------------*/  
+  
+/* General Styling for Footer */
+footer {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    color: #212529;
+    font-family: Arial, sans-serif;
+  }
+  
+  footer h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #343a40;
+  }
+  
+  footer .nav-link {
+    color: #6c757d;
+    transition: color 0.3s ease;
+  }
+  
+  footer .nav-link:hover {
+    color: #007bff;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer .list-unstyled {
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer ul.nav {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer .d-flex a {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  footer .d-flex a:hover {
+    color: #007bff;
+    transform: scale(1.1);
+  }
+  
+  footer .form-control,
+  footer .btn {
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  /* Newsletter Section */
+  footer form h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  footer form p {
+    font-size: 14px;
+    color: #6c757d;
+  }
+  
+  /* Social Media Icons */
+  footer .list-unstyled li {
+    margin-left: 15px;
+  }
+  
+  footer .list-unstyled li a {
+    color: #6c757d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #dee2e6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  footer .list-unstyled li a:hover {
+    color: #fff;
+    background-color: #434343;
+    border-color: #000000;
+  }
+  
+  /* Footer Bottom Text */
+  footer .border-top {
+    border-color: #dee2e6 !important;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  
+  footer .py-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  footer .py-4 .list-unstyled {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    gap: 10px;
+  }
+  
+  @media (max-width: 576px) {
+    footer .d-flex.flex-sm-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+
+  /*---------------------------------------------------------- header iti Styles *-------------------------------------------------*/
+
+/* Main Container Styling */
+.iti.container {
+    background: linear-gradient(135deg, #1e1e2d, #2b2b3d); /* พื้นหลังไล่เฉดสีมืดสวยงาม */
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* เงาที่เพิ่มความลึก */
+    text-align: center; /* จัดให้อยู่กลาง */
+    max-width: 800px; /* กำหนดความกว้าง */
+    margin: 30px auto; /* จัดให้อยู่กลางหน้าจอ */
+    margin-top: 69px;
+}
+
+/* Text Styling for School Name */
+.text-parent {
+    display: block;
+    color: #00bcd4; /* สีฟ้าเทอร์ควอยซ์ */
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase; /* พิมพ์ใหญ่ทั้งหมด */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* เพิ่มเงาให้ข้อความ */
+}
+
+/* Main Title Styling */
+.text-page-title-type-2 {
+    font-size: 48px;
+    color: #ffffff; /* สีขาวสดใส */
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* เงาแบบอลังการ */
+    position: relative;
+}
+
+/* Decorative Line Below Title */
+.text-page-title-type-2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: #00bcd4; /* แถบสีฟ้า */
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* Subtitle Styling */
+.text-detail {
+    display: block;
+    color: #00bcd4; /* สีเทาสว่าง */
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* เพิ่มเงาให้ดูมิติสวยงาม */
+}
+
+/*---------------------------------------------------------- end header iti Styles *-------------------------------------------------*/
+
+
+/* Container Styles */
+.col-12 {
+    max-width: 1200px; /* กำหนดความกว้างสูงสุดเพื่อความอ่านง่าย */
+    margin: 20px auto; /* จัดตรงกลางและเพิ่มระยะด้านบน-ล่าง */
+    padding: 20px 30px; /* เพิ่ม padding ให้มีระยะรอบขอบ */
+    background-color: #1e1e2d; /* สีพื้นหลังโทนมืดที่สบายตา */
+    border: 2px solid #343a40; /* กรอบรอบๆ ที่เข้ากับธีม */
+    border-radius: 10px; /* มุมที่โค้งมนเพื่อความนุ่มนวล */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* เพิ่มเงาให้ดูมีมิติ */
+}
+
+/* Introduction Text Styles */
+.textiti-introduction-body {
+    font-family: 'Roboto', sans-serif; /* ฟอนต์มืออาชีพและอ่านง่าย */
+    color: #e0e0e0; /* สีข้อความเป็นสีขาวอมเทาเพื่อความสบายตา */
+    line-height: 1.8; /* เพิ่มระยะห่างระหว่างบรรทัด */
+    font-size: 16px; /* ขนาดตัวอักษรที่เหมาะสม */
+    text-align: justify; /* จัดข้อความแบบชิดขอบเพื่อความเรียบร้อย */
+}
+
+/* Heading Styles */
+.textiti-page-title-type-2 {
+    font-size: 36px; /* ขนาดหัวข้อใหญ่ที่ดึงดูดสายตา */
+    color: #00bcd4; /* สีฟ้าน้ำทะเลที่โดดเด่นและดึงดูด */
+    margin-bottom: 20px; /* ระยะห่างระหว่างหัวข้อกับเนื้อหา */
+    font-weight: 700; /* น้ำหนักตัวอักษรที่ทำให้หัวข้อดูสำคัญ */
+    text-align: center; /* จัดหัวข้อให้อยู่ตรงกลาง */
+    text-transform: uppercase; /* ทำตัวอักษรเป็นตัวพิมพ์ใหญ่ทั้งหมด */
+}
+
+/* Subtitle */
+.textiti-parent{
+    display: block;
+    font-size: 18px; /* ขนาดตัวอักษรของ Subtitle */
+    color: #cfd8dc; /* สีเทาสว่างสำหรับความเด่นน้อยกว่าหัวข้อหลัก */
+    margin-bottom: 15px; /* ระยะห่างระหว่าง Subtitle และหัวข้อหลัก */
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* List Styles */
+ol {
+    padding-left: 20px; /* เพิ่ม padding เพื่อจัดตำแหน่งให้ถูกต้อง */
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px; /* ระยะห่างระหว่างแต่ละรายการ */
+    font-size: 16px; /* ขนาดตัวอักษรที่อ่านง่าย */
+    line-height: 1.6; /* ระยะห่างบรรทัดที่เพิ่มขึ้น */
+    color: #e0e0e0; /* สีเทาขาวที่สอดคล้องกับธีม */
+}
+
+/* Paragraph Styles */
+p {
+    margin-bottom: 1rem;
+    text-align: justify; /* จัดข้อความให้อยู่แบบชิดขอบ */
+    font-size: 16px;
+    color: #d3d3d3; /* สีเทาอ่อนที่สบายตา */
+}
+
+/* Additional Span Styles */
+span {
+    display: block;
+    margin-bottom: 10px; /* ระยะห่างระหว่างส่วนต่างๆ */
+}
+
+/*------------------------------------------------------------------------------------*/
+
+/* Main Container Styling */
+.ac1container {
+    max-width: 1200px; /* เพิ่มความกว้างสูงสุดให้กับคอนเทนเนอร์ */
+    margin: 0 auto; /* จัดให้อยู่กลางหน้าจอ */
+    padding: 20px; /* เพิ่มระยะห่างด้านใน */
+}
+
+/* Featured Blog Post Styling */
+.bg-body-secondary {
+    background: linear-gradient(to right, #f8f9fa, #e9ecef); /* พื้นหลังแบบไล่สี */
+    border-radius: 15px; /* มุมโค้ง */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* เงาเพิ่มความลึก */
+    position: relative; /* สำหรับใช้กับ ::after */
+    overflow: hidden; /* ป้องกันเนื้อหาเกินขอบ */
+}
+
+/* Title Styling */
+.display-4 {
+    font-size: 2.5rem; /* ขนาดฟอนต์สำหรับชื่อเรื่อง */
+    font-weight: bold; /* หนา */
+    color: #343a40; /* สีข้อความ */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* เงาข้อความ */
+}
+
+/* Lead Text Styling */
+.lead {
+    font-size: 1.25rem; /* ขนาดฟอนต์สำหรับข้อความนำ */
+    color: #495057; /* สีข้อความ */
+    line-height: 1.5; /* ระยะห่างระหว่างบรรทัด */
+}
+
+/* Decorative Element */
+.bg-body-secondary::after {
+    content: ''; /* สร้างองค์ประกอบใหม่ */
+    position: absolute; /* วางอยู่ในตำแหน่งที่ระบุ */
+    top: 0; /* เริ่มที่ด้านบน */
+    left: 0; /* เริ่มที่ด้านซ้าย */
+    width: 100%; /* กว้างเต็มพื้นที่ */
+    height: 100%; /* ยาวเต็มพื้นที่ */
+    background: rgba(255, 255, 255, 0.1); /* พื้นหลังสีขาวโปร่งใส */
+    border-radius: 15px; /* มุมโค้ง */
+    pointer-events: none; /* ไม่ให้มีปฏิสัมพันธ์ */
+}
+
+/* Responsive Text for Mobile Devices */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2rem; /* ลดขนาดฟอนต์สำหรับอุปกรณ์เล็ก */
+    }
+    .lead {
+        font-size: 1rem; /* ลดขนาดฟอนต์สำหรับอุปกรณ์เล็ก */
+    }
+}
+/*-------------------------------------start ac1 card--------------------------------------------------------*/
+
+.card-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem; /* Add space between cards */
+}
+
+.card {
+    border: none; /* Remove default border */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Ensure children don't overflow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Move up on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.card-img-top {
+    border-bottom: 4px solid #007bff; /* Bottom border for image */
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Cover image proportion */
+}
+
+.card-title {
+    font-size: 1.25rem; /* Larger title */
+    font-weight: bold; /* Bold title */
+    color: #343a40; /* Dark text color */
+}
+
+.card-text {
+    color: #6c757d; /* Secondary text color */
+}
+
+.text-body-secondary {
+    color: #868e96; /* Light grey color for small text */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .card-group {
+        flex-direction: column; /* Stack cards on smaller screens */
+    }
+}
+/*-------------------------------------------Login start----------------------------------------------*/
+
+.bg-image-vertical {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 100%;
+    }
+    
+    @media (min-width: 1025px) {
+    .h-custom-2 {
+    height: 100%;
+    }
+    }
+
